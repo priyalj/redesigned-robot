@@ -1,0 +1,96 @@
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+}
+
+h1{
+	 margin-bottom: 10px;
+	 /*font-family: Times New Roman,arial;*/
+	 color: #A62A2A;
+	 text-align: center;
+	 font-weight:bold;
+
+}
+#bigbox{
+	position: relative;
+	width: 100%;
+
+}
+.boxing{
+	
+	padding: 7px;
+	float: left;
+}
+
+/* Created inner box to provide padding, to create space between the three boxes. Margins cannot be used because they are not counted in box-border. Thus, we shifted the border part in the "inner box" and added padding to space out in the "boxing" box, along with float left.*/
+.innerbox{
+	border: black solid 1px;
+	background-color: #00FA9A;
+
+}
+.subbox{
+	position: relative;
+	float: right;
+	width:92px;
+	height: 40px;
+	border: solid black 1px;
+	
+
+
+
+}
+.submenu{
+	/*left: 330px;
+	bottom:78px;*/
+	color: #162252;
+	/*margin-top:0;*/
+	text-align: center;
+	padding:10px 5px 12px 5px;
+
+}
+.content{
+	font-size: 19px;
+	/*font-family: arial, sans-serif;*/
+	color: #191970;
+	clear: both;
+	padding: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+#s1{
+	background-color: #00eeee;
+}
+#s2{
+	background-color: #ffff00;
+
+}
+#s3{
+	background-color: #b19cd9;
+}
+@media(min-width:992px) {
+.boxing{
+	
+	width:33%;
+}
+}
+@media(min-width:768px) and (max-width:991px){
+.boxing1, .boxing2{
+	
+	width:50%;
+	
+}
+.boxing3{
+	width: 100%;
+}
+}
+@media(max-width:767px){
+.boxing{
+	width: 100%
+}
+}
